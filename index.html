@@ -20,6 +20,11 @@
                 width:60%;
                 height: auto;
             }
+            .statsScreenshot{
+                width:100%;
+                height: auto;
+                margin:5%;
+            }
             .arrow{
                 text-align: center;
                 margin: 2%;
@@ -58,19 +63,26 @@
         <section id="about">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>About This API</h2>
-                        <p class="lead">Since the start of the game Behavior has always kept certain statistics from the game private. This project aims to change that. This API Tracks evry public match of Dead By Daylight that I play automatially to track the following things:</p>
-                        <ul>
-                            <li>Perks</li>
-                            <li>Killers</li>
-                            <li>Escapes/Kills</li>
-                            <li>Match Scores</li>
-                            <li>Items (Beta)</li>
-                            <li>Offerings (Beta)</li>
-                            <li>Addons (Not Currently Implemented)</li>
-                        </ul>
+                    <!-- <div class="col-lg-8"> -->
+                    <div style="display:flex;flex-direction: row; align-items:center;justify-content: center;">
+                        <div style = "flex:2">
+                            <h2>About This API</h2>
+                            <p class="lead">Since the start of the game Behavior has always kept certain statistics from the game private. This project aims to change that. This API Tracks evry public match of Dead By Daylight that I play automatially to track the following things:</p>
+                            <ul>
+                                <li>Perks</li>
+                                <li>Killers</li>
+                                <li>Escapes/Kills</li>
+                                <li>Match Scores</li>
+                                <li>Items (Beta)</li>
+                                <li>Offerings (Beta)</li>
+                                <li>Addons (Not Currently Implemented)</li>
+                            </ul>
+                        </div>
+                        <div style = "flex:4">
+                            <img class = "statsScreenshot" src="assets/stats_snapshot.png" alt="Example End Game Screenshot" data-aos="zoom-in" data-aos-delay="100" >
+                        </div>
                     </div>
+                        <!-- </div> -->
                 </div>
             </div>
         </section>
@@ -86,9 +98,9 @@
                             <div class="arrow">
                                 <i class='fas fa-angle-right' style='font-size:65px;color:black'></i>
                             </div>
-                            <img class = "exampleImageAnalysed" src="assets/end_game_example.png" alt="Example End Game Screenshot" data-aos="zoom-in" data-aos-delay="100" >
+                            <img class = "exampleImageAnalysed" src="assets/screenshot_analysed.png" alt="Example End Game Screenshot" data-aos="zoom-in" data-aos-delay="100" >
                         </div>
-                        <p class="lead" style = "margin: 5px;">Using image processing in Python 3.9 we can analyze pixel clusters and determine what data is being used. This method avoids any internal tampering with the game and instead only uses.</p>     
+                        <p class="lead" style = "margin: 5px;">Using image processing in Python 3.9 we can analyze pixel clusters and determine what data is being used. This method avoids any internal tampering with the game and instead only uses image processing using OpenCV2. This program has quite a lot of flaws and is quite restricted and so after the 6.1 release, I intend to make some serious changes to make image processing more accurate.</p>     
                     </div>
                 </div>
                 
